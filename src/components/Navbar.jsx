@@ -25,7 +25,7 @@ const NavBar = ({ setLoggedIn }) => {
                         <NavItem>
                             <NavLink tag={Link} to="/">Homepage</NavLink>
                         </NavItem>
-                        {/* {localStorage.getItem("jwt") && <NavLink tag={Link} to="/myProfile">My Profile</NavLink>} */}
+                        {localStorage.getItem("jwt") && <NavLink tag={Link} to="/myProfile">My Profile</NavLink>}
                         <NavItem>
                             <NavLink tag={Link} to="/about">About page</NavLink>
                         </NavItem>
